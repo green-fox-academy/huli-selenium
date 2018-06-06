@@ -18,5 +18,8 @@
   "homepage": "https://github.com/pontiac1-1/huli-selenium#readme",
   "devDependencies": {
     "selenium-webdriver": "^4.0.0-alpha.1"
+  },
+  "dependencies": {
+    "chromedriver": "^2.39.0"
   }
 }

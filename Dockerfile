@@ -49,9 +49,9 @@ RUN apt-get install dotnet-sdk-2.1 -y -f
 RUN apt-get install -y curl \
   && curl -sL https://deb.nodesource.com/setup_9.x | bash - \
   && apt-get install -y nodejs \
-  && curl -L https://www.npmjs.com/install.sh | sh \
-  && npm i
-
+  && curl -L https://www.npmjs.com/install.sh \
+  && npm install selenium-webdriver
+ 
 #install java
 
 RUN apt-get install default-jre -y

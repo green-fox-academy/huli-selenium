@@ -20,14 +20,16 @@ def chrome():
     search_box.send_keys('DevOps')
     search_box.submit()
 
-    RESULTS_LOCATOR = "//div/h3/a"
-    results = driver.find_elements_by_css_selector('div > div > h3 > a')
+    RESULTS_LOCATOR = "//div/div/div/div/div/div/div/div/cite"
+    results = driver.find_elements(By.XPATH, RESULTS_LOCATOR)
 
     if(len(results) != 0):
         print('%s results have been found on the first page' % len(results))
     else:
         print('no results have been found')
  
+    for item in results:
+        print(item.text)
 
     driver.quit()
     display.stop()

@@ -1,7 +1,7 @@
 selenium:
     build: .
     volumes: 
-      - .:/usr/src/app
+      - ./src:/usr/src/app
     ports:
         - 4000:4000
     privileged: true
