@@ -9,4 +9,9 @@ You will find two example scriptes written in python (example.py, google.py). To
 python3 example.py
 ````
 
+An example for NodeJS is test.js. To run it use the CLI like so:
+```
+node test
+```
+
 Feel free to code your own tests in the language you prefer (Java, JS, C#, Python)!
